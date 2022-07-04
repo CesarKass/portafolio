@@ -800,6 +800,11 @@ nav {
         z-index: 1;
         position: relative;
     }
+    .man{
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-image: linear-gradient( to bottom, transparent, red, transparent ) 1 100%
+    }
 
     .content .man {
         height: 300px;
@@ -812,11 +817,11 @@ nav {
     }
 
     .logo img:nth-child(1) {
-        width: 550px;
+        width: 400px;
     }
 
     .logo img:nth-child(2) {
-        width: 550px;
+        width: 400px;
     }
 
     .AppGrid {

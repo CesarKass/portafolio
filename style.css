@@ -181,7 +181,7 @@ nav {
 
 .header .nav-links li {
     display: inline-block;
-    padding: 20px 20px;
+    /* padding: 20px 0px; */
 
 }
 
@@ -193,10 +193,11 @@ nav {
 
 .header .nav-links li a {
     font-size: 15pt;
-    color: #ffffffe0;
+    color: #ffffff;
     text-decoration: none;
     text-shadow: 0 0 15px rgb(255, 0, 0);
     padding: 20px 20px;
+    display: block;
 }
 
 
@@ -384,7 +385,7 @@ nav {
 
 .logo img:nth-child(1) {
     position: absolute;
-    width: 550px;
+    width: 400px;
     transform-origin: 0 0;
     animation-name: imgzoom;
     animation-duration: 5s;
@@ -393,7 +394,7 @@ nav {
 
 .logo img:nth-child(2) {
     position: absolute;
-    width: 550px;
+    width: 400px;
     transform-origin: 0 0;
     animation-name: imgzoom;
     animation-duration: 5.5s;
@@ -431,6 +432,9 @@ nav {
     /* border: 1px solid #ff0000; */
     display: flex;
     justify-content: center;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-image: linear-gradient( to bottom, transparent, red, transparent ) 1 100%;
 }
 
 .card {
@@ -557,8 +561,8 @@ nav {
 
 
 
-/*gustos*/
-.proyects {
+/*software*/
+.software {
     width: 100%;
 }
 
@@ -679,6 +683,141 @@ nav {
 
 
 
+
+
+/*Fin software*/
+
+/* proyects */
+    .proyects{
+        margin-top: 100px;
+    }
+    .proyects h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Segoe UI', serif;
+        font-weight: normal;
+        color: #fff;
+    }
+/* Fin proyects */
+
+/* Habilidades */
+.skills{
+    margin-top: 100px;
+}
+.skills h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', serif;
+    font-weight: normal;
+    color: #fff;
+}
+/* Fin Habilidades */
+
+/*Linea del tiempo*/
+.timeline-section{ 
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-section h1{ 
+    color: #fff;
+    text-align: center; 
+    font-size: 50px;
+    font-family: 'Segoe UI', serif;
+    font-weight: normal;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: rgb(98, 98, 98);
+	left: calc(50% - 1px);
+	top: 10px;
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+    
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: rgb(229, 25, 25);
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+} 
+.timeline-content{
+    background-color: #000000;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #e1e1e1;
+	margin:5px 0 0 2px;
+	text-transform: capitalize;
+	font-weight: 500;  
+    width:100%; 
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.70turn, transparent, rgb(229, 25, 25));
+    border-image-slice: 2;
+} 
+.timeline-dot::before{
+    content: '';
+    border-bottom: 1px solid rgb(229, 25, 25);
+    border-top: 2px solid rgb(229, 25, 25);
+    position: absolute;
+    width: 60px;
+    height: 5px; 
+    top: 29px;
+    right: 14px;
+	transform: rotate(-48deg);
+} 
+.timeline-item:nth-child(even) .timeline-dot::before{ 
+    top: 29px;
+    left: 16px;
+	transform: rotate(47deg);
+} 
+.timeline-dot::after{
+    content: '';
+    border-bottom: 2px solid rgb(229, 25, 25);
+    position: absolute;
+    width: 20px;
+    height: 5px; 
+    top: 3px;
+    right: 7px; 
+}
+.timeline-item:nth-child(even) .timeline-dot::after{ 
+    top: 3px;
+    left: 8px; 
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
 @media only screen and (min-width: 50px) {
 
     .header .nav-links {
@@ -688,13 +827,10 @@ nav {
     .header .nav-links li a span {
         display: none;
     }
-
-    .header .nav-links li {
-        padding: 22px 10px;
-    }
+ 
 
     .header .nav-links li a {
-        padding: 0px;
+        padding: 20px 10px;
     }
 
     .main .text-begin div {
@@ -730,7 +866,7 @@ nav {
         padding: 15% 20% 5% 20%;
     }
 
-    .proyects {
+    .software {
         margin-top: -200px;
     }
     .AppGrid {
@@ -750,8 +886,36 @@ nav {
     }
 }
 
+@media (max-width: 550px) {
+    /*linea del tiempo */
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left:0;
+    }
+    .timeline-item:nth-child(odd) .timeline-dot::after{ 
+        top: 3px;
+        left: 7px; 
+    }
+    .timeline-item:nth-child(odd) .timeline-dot::before{ 
+        top: 29px;
+        left: 16px;
+        transform: rotate(45deg);
+    } 
+
+}
+
 @media (min-width: 550px) {
-    .header .nav-links li {
+    .header .nav-links li a {
         padding: 20px 10px;
     }
 
@@ -775,14 +939,22 @@ nav {
             "App3 App4"
             "App5 App6";
     }
+
+    .timeline-item:nth-child(odd) .timeline-content h3{ 
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.70turn, rgb(229, 25, 25), transparent);
+        border-image-slice: 2;
+    }  
+
 }
 
 @media (min-width: 900px) {
     .header .nav-links li a span {
         display: inline-block;
     }
+ 
 
-    .header .nav-links li {
+    .header .nav-links li a {
         padding: 20px 20px;
     }
 
@@ -807,16 +979,16 @@ nav {
         position: relative;
     }
 
-    .proyects {
+    .software {
         margin-top: 0px;
     }
 
     .logo img:nth-child(1) {
-        width: 550px;
+        width: 400px;
     }
 
     .logo img:nth-child(2) {
-        width: 550px;
+        width: 400px;
     }
 
     .AppGrid {
@@ -830,4 +1002,7 @@ nav {
             "App1 App2 App3"
             "App4 App5 App6";
     }
+
+    
+    
 }

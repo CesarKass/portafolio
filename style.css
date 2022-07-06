@@ -435,7 +435,7 @@ nav {
     justify-content: center;
     border-left-width: 1px;
     border-left-style: solid;
-    border-image: linear-gradient( to bottom, transparent, red, transparent ) 1 100%;
+    border-image: linear-gradient( to bottom, transparent, gray, transparent ) 1 100%;
 }
 
 .card {
@@ -534,8 +534,7 @@ nav {
 
 .card:hover::after {
     /* box-shadow: inset 0 0 25px rgb(229, 25, 25); */
-    background: rgb(229, 25, 25);
-    ;
+    background: rgb(229, 25, 25); 
 }
 
 @keyframes cardParticula {
@@ -691,6 +690,7 @@ nav {
 /* proyects */
     .proyects{
         margin-top: 100px;
+        perspective: 5000px;
     }
     .proyects h1 {
         text-align: center;
@@ -699,6 +699,206 @@ nav {
         font-weight: normal;
         color: #fff;
     }
+    .poryect-content{
+
+    }
+    .card-proyect{
+        margin: 10px;  
+        width: 300px;
+        height: 300px; 
+        position: relative; 
+        transform-origin: left bottom; 
+        transition-duration: 0.5s;
+        animation-name: cardProyectos;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        transform: rotateY(-20deg) rotateX(10deg);
+    } 
+    
+    @keyframes cardProyectos {
+        0% { 
+            width: 5px;
+            top: 10%;
+        }
+
+        50% {
+            transform: rotateY(-20deg) rotateX(10deg) translateY(10%);
+            width: 5px;
+            top: 10%;
+        }
+
+        100% { 
+            width: 5px;
+            top: 10%;
+        }
+    }
+    .card-proyect:hover{ 
+        transform: rotateY(0deg) rotateX(0deg); 
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s; 
+        animation-name: none;
+        animation-duration: 0s; 
+    } 
+    .card-proyect  .clip:hover{  
+        background-color: rgb(158, 35, 35); 
+    } 
+    .card-proyect .clip{ 
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        position: absolute;
+        background-color: rgb(29, 29, 29);   
+        /* background-image: linear-gradient(to right, red, transparent); */
+        /* -webkit-clip-path: polygon(0% 9%, 7% 1%, 21% 1%, 25% 4%, 86% 5%, 89% 1%, 95% 1%, 100% 8%, 99% 86%, 93% 100%, 82% 100%, 78% 95%, 63% 96%, 57% 100%, 28% 100%, 27% 94%, 14% 95%, 11% 100%, 1% 95%); */
+        /* clip-path: polygon(0% 7%, 7% 0%, 20% 0%, 25% 4%, 75% 4%, 80% 0%, 94% 0%, 100% 7%, 
+                           100% 20%, 96% 25%, 96% 45%, 96% 50%, 98% 55%, 98% 80%, 100% 84%,
+                           100% 93%, 93% 100%, 85% 100%, 80% 96%, 65% 96%, 60% 100%, 35% 100%, 30% 96%, 20% 96%, 15% 100%, 10% 100%, 0% 93%, 
+                           0% 85%, 4% 80%, 4% 65%, 0% 60%); */
+        clip-path: polygon(0% 10%, 5% 4%, 35% 4%, 40% 0%, 80% 0%, 95% 0%, 100% 5%, 
+        100% 20%, 98% 25%, 98% 80%, 100% 83%,
+        100% 93%, 95% 97%, 75% 97%, 70% 100%, 35% 100%, 30% 96%, 20% 96%, 5% 96%, 
+        0% 92%);
+    }
+
+    .card-proyect .sub-left{ 
+        width: 300px;
+        height: 300px; 
+        top: 0px;
+        left: 10px;
+        position: relative;
+        background-color:rgb(247, 25, 25);
+        clip-path: polygon(0% 14%, 6.5% 6.5%, 40% 6.5%, 43% 4%, 58% 4%, 61% 6%, 43% 6%, 38% 10%, 8% 10%, 2.5% 16.5%, 2.5% 98%, 1.5% 97.2%, 1.5% 17%, 0% 16%); 
+    }
+    .card-proyect .inf-left{  
+        width: 300px;
+        height: 300px; 
+        top: 20px;
+        left: 8px;
+        position: absolute;
+        background-color:rgb(247, 25, 25);
+        clip-path: polygon(0.5% 10%, 0.5% 91%, 8% 97%, 30% 97%, 29.4% 96.5%, 8% 96.5%, 1% 91%, 1% 10.3%); 
+    }
+    .card-proyect .inf-bottom{  
+        width: 300px;
+        height: 300px; 
+        top: 309.2px;
+        left: 96px;
+        position: absolute;
+        background-color:rgb(247, 25, 25);
+        clip-path: polygon(1% 0.1%, 7% 5%, 50% 5%, 49% 4%, 8.8% 4%, 4% 0.1%); 
+    }
+    .card-proyect .inf-right{  
+        width: 300px;
+        height: 300px; 
+        top: 50px;
+        left: 220px;
+        position: absolute;
+        background-color:rgb(247, 25, 25);
+        clip-path: polygon( 4.5% 90%, 10% 90%, 12% 92%, 20% 92%, 22% 90%, 30% 90%, 37% 84.5%, 37% 50%, 35% 48%, 35% 1%, 34% 0%, 34% 10%, 32% 15%, 32% 70%, 34% 73%, 34% 83%, 29% 87.5%, 8.5% 87.5%); 
+    }
+    .card-proyect .top-clip{
+        width: 40px;
+        height: 1px;
+        top: 5px;
+        left: 125px;
+        background-color: rgb(247, 25, 25);
+        position: absolute;
+    }
+    .card-proyect .top-clip::after{
+        content: ''; 
+        width: 40px;
+        height: 1px;
+        left: 50px;
+        background-color: rgb(199, 17, 17);
+        position: absolute;
+    }
+    .card-proyect .top-clip::before{
+        content: ''; 
+        width: 40px;
+        height: 1px;
+        left: 100px;
+        background-color: rgb(164, 16, 16);
+        position: absolute;
+    }
+    .card-proyect .clip::before{
+        content: ''; 
+        display: block;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(10, 10, 12, 0.711); 
+        /* -webkit-clip-path: polygon(0% 9%, 7% 1%, 21% 1%, 25% 4%, 86% 5%, 89% 1%, 95% 1%, 100% 8%, 99% 86%, 93% 100%, 82% 100%, 78% 95%, 63% 96%, 57% 100%, 28% 100%, 27% 94%, 14% 95%, 11% 100%, 1% 95%); */
+        clip-path: polygon(1% 7%, 7% 1%, 20% 1%, 24% 5%, 76% 5%, 80% 1%, 93% 1%, 99% 7%, 
+                           100% 20%, 96% 25%, 96% 45%, 96% 50%, 98% 55%, 98% 80%, 100% 84%,
+                           100% 93%, 93% 100%, 85% 100%, 80% 96%, 65% 96%, 60% 100%, 35% 100%, 30% 96%, 20% 96%, 15% 100%, 10% 100%, 0% 93%, 
+                           0% 85%, 4% 80%, 4% 65%, 1% 60%);
+     }
+    .card-proyect .data{
+        width: 90%; 
+        height: 90%; 
+        padding-top: 10px;
+        color: #fff; 
+        background: rgba(255, 255, 255, 0);
+        z-index: 2;
+        position: relative;
+        text-align: center;
+     }
+    .card-proyect .data h3{
+        text-align: right;
+        padding-right: 10px;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.70turn, transparent, rgb(229, 25, 25));
+        border-image-slice: 2;
+        background-image: linear-gradient(260deg, black, rgb(0, 0, 0));
+     }
+    .card-proyect .data img{
+        text-align: center;
+        width: 100%;
+        height: 120px;
+        margin: 10px 10px;
+        border: 3px solid red;
+    }
+    .card-proyect .data p{
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+        height: 30%;
+        margin-top: -5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .card-proyect .data b{ 
+        font-size: 13px; 
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-proyect .data hr{   
+        height: 1px; 
+        margin-top: -10px;
+        background-image: linear-gradient(45deg, transparent, red, transparent);
+        border: 0; 
+    }
+
+    .card-proyect .sub-right{  
+        width: 105px;
+        height: 1px;
+        top: 17px;
+        left: 200px;
+        background-color: rgb(247, 25, 25);
+        position: absolute;
+    }
+    .card-proyect .sub-right::after{ 
+        content: '';
+        width: 22px;
+        height: 1px;
+        top: 8px;
+        left: 102px;
+        background-color: rgb(247, 25, 25);
+        position: absolute;
+        transform: rotate(45deg);
+    }  
 /* Fin proyects */
 
 /* Habilidades */
@@ -1004,6 +1204,17 @@ nav {
             "App4 App5 App6";
     }
 
+    .poryect-content {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "App1 App2 App3"
+            "App4 App5 App6";
+    }
     
     
 }

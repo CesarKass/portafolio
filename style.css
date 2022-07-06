@@ -691,6 +691,7 @@ nav {
     .proyects{
         margin-top: 100px;
         perspective: 5000px;
+        background-color: #000;
     }
     .proyects h1 {
         text-align: center;
@@ -703,7 +704,7 @@ nav {
 
     }
     .card-proyect{
-        margin: 10px;  
+        /* margin: 10px;   */
         width: 300px;
         height: 300px; 
         position: relative; 
@@ -1085,6 +1086,21 @@ nav {
             "App5" 
             "App6";
     }
+    .poryect-content {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "App1"
+            "App2"
+            "App3" 
+            "App4"
+            "App5" 
+            "App6";
+    }
 }
 
 @media (max-width: 550px) {
@@ -1127,7 +1143,7 @@ nav {
     .colour-block {
         padding: 5% 20% 5% 20%;
     }
-
+ 
     .AppGrid {
         margin-top: 10px;
         display: grid;
@@ -1209,7 +1225,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 5px 5px;
+        gap: 10px 10px;
         grid-auto-flow: row;
         grid-template-areas:
             "App1 App2 App3"

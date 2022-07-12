@@ -562,129 +562,125 @@ nav {
 
 
 /*software*/
-.software {
-    width: 100%;
-}
+    .software {
+        width: 100%;
+    }
 
-.skew-c {
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    left: 0px;
-    background: linear-gradient(to left bottom, #09080d 47%, #a90303 3%, rgb(0, 0, 0) 50%);
-}
+    .skew-c {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+        background: linear-gradient(to left bottom, #09080d 47%, #a90303 3%, rgb(0, 0, 0) 50%);
+    }
 
-.skew-cc {
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    left: 0px;
-    background: linear-gradient(to right bottom, rgb(0, 0, 0) 47%, #a90303 3%, #09080d 50%), linear-gradient(-50deg, #09080d 16px, #000 0);
-}
+    .skew-cc {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+        background: linear-gradient(to right bottom, rgb(0, 0, 0) 47%, #a90303 3%, #09080d 50%), linear-gradient(-50deg, #09080d 16px, #000 0);
+    }
 
-.colour-block {
-    background: #000;
-    width: 100%;
-    padding: 5% 20% 5% 20%;
-    color: #fff;
-}
-  
-.colour-block h1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Segoe UI', serif;
-    font-weight: normal;
-}
+    .colour-block {
+        background: #000;
+        width: 100%;
+        padding: 5% 20% 5% 20%;
+        color: #fff;
+    }
+    
+    .colour-block h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Segoe UI', serif;
+        font-weight: normal;
+    }
 
-.colour-block p {
-    font-size: 20px;
-    font-family: 'Raleway', serif;
-}
+    .colour-block p {
+        font-size: 20px;
+        font-family: 'Raleway', serif;
+    }
 
-/*Card Apps*/
-.cardAps {
-    width: 210px;
-    height: 100px;
-    background-color: #ff0000;
-    position: relative;
-}
+    /*Card Apps*/
+    .cardAps {
+        width: 210px;
+        height: 100px;
+        background-color: #ff0000;
+        position: relative;
+    }
 
-.cardAps:before {
-    content: '';
-    width: 206px;
-    height: 96px;
-    background: #000;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    z-index: 1;
-}
+    .cardAps:before {
+        content: '';
+        width: 206px;
+        height: 96px;
+        background: #000;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        z-index: 1;
+    }
 
-.cardAps,
-.cardAps:before {
-    -webkit-clip-path: polygon(10% 0%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 90%, 0% 20%);
-    clip-path: polygon(10% 0%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 90%, 0% 20%);
-}
+    .cardAps,
+    .cardAps:before {
+        -webkit-clip-path: polygon(10% 0%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 90%, 0% 20%);
+        clip-path: polygon(10% 0%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 90%, 0% 20%);
+    }
 
-.cardAps .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-}
+    .cardAps .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+    }
 
-.cardAps .content h3 {
-    background-image: linear-gradient(260deg, rgba(203, 43, 43, 0.295), transparent);
-    padding: 5px;
-    margin-left: 5px;
-    border-bottom: 2px solid #a90303;
-}
+    .cardAps .content h3 {
+        background-image: linear-gradient(260deg, rgba(203, 43, 43, 0.295), transparent);
+        padding: 5px;
+        margin-left: 5px;
+        border-bottom: 2px solid #a90303;
+    }
 
-.cardAps .content img {
-    padding: 5px;
-    margin-left: 2px;
-}
+    .cardAps .content img {
+        padding: 5px;
+        margin-left: 2px;
+    }
 
-.cardAps:hover:before {
-    background: rgb(45, 3, 3);
-    cursor: pointer;
-}
-
-
-
-.App1 {
-    grid-area: App1;
-}
-
-.App2 {
-    grid-area: App2;
-}
-
-.App3 {
-    grid-area: App3;
-}
-
-.App4 {
-    grid-area: App4;
-}
-
-.App5 {
-    grid-area: App5;
-}
-
-.App6 {
-    grid-area: App6;
-}
+    .cardAps:hover:before {
+        background: rgb(45, 3, 3);
+        cursor: pointer;
+    }
 
 
 
+    .App1 {
+        grid-area: App1;
+    }
 
+    .App2 {
+        grid-area: App2;
+    }
 
+    .App3 {
+        grid-area: App3;
+    }
+
+    .App4 {
+        grid-area: App4;
+    }
+
+    .App5 {
+        grid-area: App5;
+    }
+
+    .App6 {
+        grid-area: App6;
+    }
+ 
 /*Fin software*/
 
 /* proyects */
@@ -699,10 +695,7 @@ nav {
         font-family: 'Segoe UI', serif;
         font-weight: normal;
         color: #fff;
-    }
-    .poryect-content{
-
-    }
+    } 
     .card-proyect{
         /* margin: 10px;   */
         width: 300px;
@@ -718,19 +711,19 @@ nav {
     
     @keyframes cardProyectos {
         0% { 
-            width: 5px;
-            top: 10%;
+            width: 0px;
+            top: 0%;
         }
 
         50% {
-            transform: rotateY(-20deg) rotateX(10deg) translateY(10%);
-            width: 5px;
-            top: 10%;
+            /* transform: rotateY(-20deg) rotateX(10deg) translateY(1%); */
+            /* width: 5px;
+            top: 2%; */
         }
 
         100% { 
-            width: 5px;
-            top: 10%;
+            width: 0px;
+            top: 0%;
         }
     }
     .card-proyect:hover{ 
@@ -779,13 +772,19 @@ nav {
         clip-path: polygon(0.5% 10%, 0.5% 91%, 8% 97%, 30% 97%, 29.4% 96.5%, 8% 96.5%, 1% 91%, 1% 10.3%); 
     }
     .card-proyect .inf-bottom{  
-        width: 300px;
-        height: 300px; 
+        width: 200px;
+        height: 20px; 
         top: 309.2px;
         left: 96px;
-        position: absolute;
+        position: absolute; 
         background-color:rgb(247, 25, 25);
-        clip-path: polygon(1% 0.1%, 7% 5%, 50% 5%, 49% 4%, 8.8% 4%, 4% 0.1%); 
+        clip-path: polygon(
+        1% 1%, 
+        11% 84%, 
+        78% 84%, 
+        75.7% 60%, 
+        14% 60%, 
+        6.7% 1%); 
     }
     .card-proyect .inf-right{  
         width: 300px;
@@ -912,6 +911,122 @@ nav {
     font-family: 'Segoe UI', serif;
     font-weight: normal;
     color: #fff;
+}
+
+.circle{
+    margin: 50px;
+    height: 205px;
+    width: 205px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+    /* border: 4px solid rgb(1, 137, 216);  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSkills{
+    display: flex;
+}
+.cardSkills:hover .content_skills_info {
+    display: block;
+    background-color: #3131314f;
+}
+.content_skills_info{
+    color: #fff;
+    border: 1px solid #ff0000;
+    width: 100%;
+    display: none;
+    padding: 30px;
+    margin-right: 50px;
+}
+  
+.circle-point{
+    height: 186px;
+    width: 186px;
+    /* background-color: rgb(50, 150, 19); */
+    border-radius: 50%;
+    border: 4px dotted rgb(148, 148, 148);   
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-point h2 {
+    color: white;
+}
+.circle-point .contenido-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden; 
+    border-radius: 50%;
+    filter:drop-shadow(0px 0px 5px red);
+}
+.circle-point .contenido-img .img-html{
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    object-position: 222% 10%; 
+}
+.circle-point .contenido-img .img-css{
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    object-position: 322% 10%; 
+}
+.circle-point .contenido-img .img-js{
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    object-position: 122% 10%; 
+}
+.circle-point .contenido-img .img-php{
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    object-position: 19% 10%; 
+}
+ 
+
+.circle-line{
+    position: absolute;
+    height: 185px;
+    width: 185px;
+    border: 5px solid rgb(25, 219, 83);
+    border-color: transparent rgb(255, 7, 7) transparent transparent; 
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 100%;
+    animation: circleRotate 2s linear infinite; 
+    z-index: 2;
+} 
+@keyframes circleRotate  { to { transform: rotate(1turn); } } 
+ 
+.circle::after{
+    content: '';
+    width: 220px;
+    height: 220px;
+    position: absolute; 
+    border: 5px solid rgb(25, 219, 83);
+    border-color:  transparent transparent transparent rgb(78, 16, 16) ; 
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 100%;
+    animation: circleRotate 2s linear infinite; 
+    z-index: 2;
+}
+.circle::before{
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: absolute; 
+    border: 3px solid rgb(25, 219, 83);
+    border-color:  transparent transparent rgb(255, 255, 255) rgb(255, 255, 255) ; 
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 100%;
+    animation: circleRotate 2s linear infinite; 
+    z-index: 2;
 }
 /* Fin Habilidades */
 
@@ -1086,6 +1201,21 @@ nav {
             "App5" 
             "App6";
     }
+    .skills-content {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "App1"
+            "App2"
+            "App3" 
+            "App4"
+            "App5" 
+            "App6";
+    }
     .poryect-content {
         margin-top: 10px;
         display: grid;
@@ -1162,6 +1292,19 @@ nav {
         border-image: linear-gradient(0.70turn, rgb(229, 25, 25), transparent);
         border-image-slice: 2;
     }  
+
+    .skills-content {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "App1 App2"
+            "App3 App4"
+            "App5 App6";
+    }
 
 }
 

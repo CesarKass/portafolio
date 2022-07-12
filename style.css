@@ -697,7 +697,7 @@ nav {
         color: #fff;
     } 
     .card-proyect{
-        /* margin: 10px;   */
+        margin: auto;  
         width: 300px;
         height: 300px; 
         position: relative; 
@@ -727,10 +727,11 @@ nav {
         }
     }
     .card-proyect:hover{ 
+        margin: auto;  
         transform: rotateY(0deg) rotateX(0deg); 
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s; 
-        animation-name: none;
-        animation-duration: 0s; 
+        /* animation-name: none; */
+        /* animation-duration: 0s;  */
     } 
     .card-proyect  .clip:hover{  
         background-color: rgb(158, 35, 35); 
@@ -1217,7 +1218,7 @@ nav {
             "App6";
     }
     .poryect-content {
-        margin-top: 10px;
+        margin-top: 10px; 
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -1364,7 +1365,7 @@ nav {
     }
 
     .poryect-content {
-        margin-top: 10px;
+        margin-top: 10px; 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;

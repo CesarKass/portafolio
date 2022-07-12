@@ -1184,6 +1184,10 @@ nav {
         padding: 15% 20% 5% 20%;
     }
 
+    .card-proyect{
+        margin: auto 5% auto 5%;  
+    }
+
     .software {
         margin-top: -200px;
     }
@@ -1287,6 +1291,9 @@ nav {
             "App3 App4"
             "App5 App6";
     }
+    .card-proyect{
+        margin: auto 25% auto 25%;  
+    }
 
     .timeline-item:nth-child(odd) .timeline-content h3{ 
         border-bottom: 2px solid transparent;
@@ -1294,18 +1301,8 @@ nav {
         border-image-slice: 2;
     }  
 
-    .skills-content {
-        margin-top: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px 10px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "App1 App2"
-            "App3 App4"
-            "App5 App6";
-    }
+    
+    
 
 }
 
@@ -1352,6 +1349,9 @@ nav {
         width: 400px;
     }
 
+    .card-proyect{
+        margin: auto;  
+    }
     .AppGrid {
         margin-top: 10px;
         display: grid;
@@ -1376,5 +1376,17 @@ nav {
             "App4 App5 App6";
     }
     
+    .skills-content {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "App1 App2"
+            "App3 App4"
+            "App5 App6";
+    }
     
 }

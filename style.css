@@ -1253,6 +1253,13 @@ nav {
         margin: auto 5% auto 5%;  
     }
 
+    .cardSkills{
+        display: block;
+    }
+    .content_skills_info{
+        right: 0px;
+    }
+
     .software {
         margin-top: -200px;
     }

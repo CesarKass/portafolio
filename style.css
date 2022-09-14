@@ -236,10 +236,16 @@ nav {
     top: 15px;
     left: 45%;
     opacity: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
+#btn-menu:hover {
+    cursor: pointer;
+}
 
+#btn-menu:hover + .nav-menu li{   
+    background-image: linear-gradient(0deg, rgb(203, 43, 43), transparent);
+}
 #btn-menu:checked + .nav-menu li{  
     background-image: linear-gradient(0deg, rgb(203, 43, 43), transparent);
 }

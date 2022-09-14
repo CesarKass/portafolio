@@ -191,7 +191,7 @@ nav {
 
 .header .nav-links li {
     display: inline-block;
-    padding: 20px 0px; 
+    padding: 19px 0px; 
 }
 
 
@@ -205,7 +205,7 @@ nav {
     color: #ffffffe0;
     text-decoration: none;
     text-shadow: 0 0 15px rgb(255, 0, 0);
-    padding: 20px 20px;
+    padding: 19x 20px;
 }
 
 .header .nav-links li label {
@@ -213,12 +213,12 @@ nav {
     color: #ffffffe0;
     text-decoration: none;
     text-shadow: 0 0 15px rgb(255, 0, 0);
-    padding: 20px 20px;
+    padding: 19px 20px;
 } 
 
 .header .nav-menu li {
     display: inline-block;
-    padding: 20px 18px; 
+    padding: 19px 18px; 
 }
 
 .header .nav-menu div {
@@ -307,7 +307,7 @@ nav {
     font-size: 1.5em;
     letter-spacing: 0.1em;
     /*Separacion de letras*/
-    padding: 10px 30px;
+    padding: 19px 30px;
     transition-duration: 0.5s;
     animation-name: luzinfobegin;
     animation-duration: 5s;
@@ -1298,7 +1298,7 @@ nav {
     }
 
     .header .nav-links li a { 
-        padding: 20px 20px;
+        padding: 19px 20px;
     }
 
     .header .nav-menu {
@@ -1528,7 +1528,7 @@ nav {
     }
 
     .header .nav-links li {
-        padding: 20px 20px;
+        padding: 19px 20px;
     }
 
     .header .nav-links {

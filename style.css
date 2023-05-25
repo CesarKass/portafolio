@@ -533,8 +533,9 @@ nav {
 .man img {
     position: absolute;
     /* border: 1px solid #ff0000; */
-    width: 310px;
+    width: 250px;
     height: 300px;
+    left: 37px;
     z-index: 2;
 }
 
